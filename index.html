@@ -18,7 +18,7 @@
             <a class="navigation-link navigation-link-current link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link link" href="about.html">О Седоне</a>
+            <a class="navigation-link link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link link" href="catalog.html">Гостиницы</a>
@@ -26,18 +26,16 @@
         </ul>
         <ul class="navigation list navigation-user">
           <li class="navigation-user">
-            <a class="navigation-link link" href="">
+            <a class="navigation-link link" href="#">
               <svg class="navigation-icon"></svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-user">
-            <a class="navigation-link link" href="">
+            <a class="navigation-link link" href="#">
               <svg class="navigation-icon"></svg>
               <span class="visually-hidden">Избранное</span>
-              <div class="count-favorites">
-                <span class="count">12</span>
-              </div>
+              <span class="count">12</span>
             </a>
           </li>
           <li class="navigation-user">
@@ -46,8 +44,8 @@
         </ul>
       </nav>
     </header>
-    <main class="hero">
-      <section class="Welcome">
+    <main class="main-container main-index">
+      <section class="welcome">
         <!-- Главный заголовок -->
         <div class="welcome-split">
           <h1><span class="visually-hidden">Добро пожаловать в великолепную Седону</span></h1>
@@ -95,13 +93,13 @@
               всё как в кино!</p>
           </li>
           <li class="advices advices-white">
-            <h3 class="advices-title advices-title-eat headings">Еда</h3>
+            <h3 class="advices-title advices-title-eat">Еда</h3>
             <p class="advices-description">Всегда заказывайте<br>
               топовый фирменный бургер,<br>
               вы не разочаруетесь!</p>
           </li>
           <li class="advices">
-            <h3 class="advices-title advices-title-gifts headings">Сувениры</h3>
+            <h3 class="advices-title advices-title-gifts">Сувениры</h3>
             <p class="advices-description">Не только китайского,<br>
               но и настоящего местного<br>
               производства!</p>
@@ -117,19 +115,15 @@
         <a class="button button-brown link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
       <!-- Форма для подписки -->
-      <section class="newsletter" data-test="subscribe">
-        <div class="newsletter-container">
-          <h2>Подпишитесь на рассылку</h2>
-          <p>Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label for="newsletter-email">
-              <span class="visually-hidden">Ваш e-mail</span>
-            </label>
-            <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
-              required>
-            <button class="button button-newsletter" type="submit">Подписаться</button>
-          </form>
-        </div>
+      <section class="newsletter newsletter-index">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email"
+            required>
+          <button class="button button-blue button-newsletter" type="submit">Подписаться</button>
+        </form>
       </section>
     </main>
     <!-- Подвал -->
@@ -161,7 +155,7 @@
         <section class="footer-contacts-container">
           <h2 class="visually-hidden">Контакты</h2>
           <address class="footer-contacts">
-            <a class="footer-contacts-phone link" href="tel:+78128121212">+7(812)812-12-12</a>
+            <a class="footer-contacts-phone link" href="tel:+78128121212">+7(812)812&ndash;12&ndash;12</a>
           </address>
         </section>
         <a class="footer-logo link" href="https://htmlacademy.ru/">
@@ -170,7 +164,7 @@
         </a>
       </div>
     </footer>
-   <!-- Форма подбора параметров -->
+    <!-- Форма подбора параметров -->
   </body>
 
 </html>
