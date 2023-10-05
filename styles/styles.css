@@ -1,0 +1,142 @@
+@font-face {
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* PT Sans полужирный */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #000000;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.button-brown {
+  background-color: #756157;
+  width: 376px;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.navigation-link.button-brown {
+  font-size: 16px;
+  background-color: #756157;
+  line-height: 20px;
+  border-radius: 4px;
+  width: 160px;
+  color: #FFFFFF;
+  }
+
+.welcome {
+  background-image: url("../images/index-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  height: 485px;
+}
+
+/*Advantages*/
+
+/*Header*/
+.advantages-header {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: inherit;
+  color: #333333;
+  text-align: center;
+}
+
+.advantages h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.services h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advices-title {
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advices-description {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.interest-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: inherit;
+}
+
+.button-search {
+  width: 575px;
+    border-radius: 10px;
+
+}
