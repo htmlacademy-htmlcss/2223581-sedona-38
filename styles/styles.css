@@ -43,8 +43,7 @@ body {
 .link {
   text-decoration: none;
   color: inherit;
-  text-align: center;
-}
+  }
 
 .navigation-link {
   font-size: 20px;
