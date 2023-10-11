@@ -16,7 +16,12 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -26,6 +31,10 @@ body {
   margin: 0;
   padding: 0;
   min-width: 1280px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
 .page-container {
@@ -33,10 +42,14 @@ body {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
   width: 1200px;
-}
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  }
 
-html {
-  height: 100%;
+.main-container {
+  flex-grow: 1;
 }
 
 .main-index {
@@ -45,12 +58,13 @@ html {
 
 .navigation {
   display: flex;
-  min-width: 64px;
+  height: 64px;
   padding: 0 70px;
 }
 
 .logo {
-  height: 70px;
+  display: inline-block;
+  z-index: 1;
 }
 
 .visually-hidden {
@@ -67,37 +81,46 @@ html {
   color: inherit;
 }
 
-.navigation-link {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: capitalize;
-  text-decoration: none;
-  text-align: center;
-}
-
 .navigation-list {
   list-style: none;
   display: flex;
-  margin-left: 29px;
-  align-items: center;
-  margin-right: auto;
+  width: 507px;
+  margin: 0;
   padding: 0;
-  width: 339px;
-  justify-content: space-around;
+  margin-left: 30px;
+  align-items: center;
 }
+
+.navigation-item a {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 20px 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #000000;
+}
+
+/*Иконки в меню справа*/
 
 .navigation-user {
   list-style: none;
   display: flex;
   width: 320px;
-  justify-content: flex-end;
+  justify-content: end;
+  align-items: center;
   margin: 0;
-}
+  padding: 0;
+  margin-left: auto;
+ }
 
-.navigation-user li:last-child {
-  margin-left: 20px;
+ .navigation-user-item a {
+  position: relative;
+  display: block;
+  padding: 32px 22px;
+  text-transform: capitalize;
+  text-decoration: none;
 }
 
 .button {
@@ -106,21 +129,21 @@ html {
   font-weight: 700;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
   padding-top: 8px;
   padding-bottom: 8px;
   border-radius: 4px;
   border: none;
+  background-color: #756157;
 }
 
-.navigation-link.button-brown {
-  font-size: 16px;
-  background-color: #756157;
-  line-height: 20px;
-  border-radius: 4px;
+.button-navigation-link {
+  display: grid;
   width: 160px;
-  color: #ffffff;
+  margin-left: 20px;
+  align-items: center;
 }
 
 .welcome {
@@ -128,7 +151,7 @@ html {
   background-color: #4067b4;
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center bottom, left top;
+  background-position: center bottom -1px, left top;
   text-align: center;
   min-height: 485px;
 }
@@ -391,6 +414,7 @@ html {
 }
 
 .field {
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -555,7 +579,7 @@ html {
   margin: 0 auto;
   padding: 25px 0;
   align-items: center;
-  }
+}
 
 .footer-social {
   max-width: 142px;
