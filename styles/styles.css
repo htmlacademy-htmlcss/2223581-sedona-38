@@ -68,7 +68,14 @@ body {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-header {
@@ -84,6 +91,7 @@ body {
 .navigation-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   width: 507px;
   margin: 0;
   padding: 0;
@@ -91,7 +99,7 @@ body {
   align-items: center;
 }
 
-.navigation-item a {
+.navigation-link {
   display: block;
   font-weight: 700;
   font-size: 20px;
@@ -105,22 +113,14 @@ body {
 /*Иконки в меню справа*/
 
 .navigation-user {
-  list-style: none;
   display: flex;
-  width: 320px;
-  justify-content: end;
   align-items: center;
-  margin: 0;
-  padding: 0;
+  min-width: 20px;
+  min-height: 22px;
+  list-style: none;
+  width: 320px;
   margin-left: auto;
-}
 
-.navigation-user-item a {
-  position: relative;
-  display: block;
-  padding: 32px 22px;
-  text-transform: capitalize;
-  text-decoration: none;
 }
 
 .button {
@@ -202,7 +202,7 @@ body {
   font-weight: inherit;
   color: #333333;
   text-align: center;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .advantages-title {
@@ -245,7 +245,6 @@ body {
 
 .advantages-item-blue {
   display: flex;
-  justify-content: space-between;
   width: 1200px;
   color: #ffffff;
   background-color: #83B3D3;
@@ -260,10 +259,20 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 69px;
+  margin-top: 62px;
+  margin-bottom: 20px;
 }
 
-.advantages-advices {
+.advantages-services {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: inherit;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.services-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -272,51 +281,64 @@ body {
   padding: 0;
 }
 
-.advices {
-  position: relative;
+.services-item-container {
   display: flex;
+  flex-grow: 1;
+  width: 230px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-item {
+  display: flex;
   width: 400px;
-  padding-top: 185px;
+  height: 385px;
+  position: relative;
   background-color: #83b3d31f;
   color: #333333;
 }
 
-.advices-title {
+.services-title {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
+  padding-top: 110px;
+
+
+
 }
 
-.advices-description {
+.services-description {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+
 }
 
-.advices-title-housing::before {
+.services-title-house::before {
   content: url("../images/home.svg");
-  top: 89px;
+  top: 80px;
 }
 
-.advices-title-eat::before {
+.services-title-eat::before {
   content: url("../images/food.svg");
-  top: 91px;
+  top: 80px;
 }
 
-.advices-title-gifts::before {
+.services-title-gifts::before {
   content: url("../images/present.svg");
-  top: 85px;
+  top: 80px;
 }
 
-.advices:nth-child(2n) {
+.services-item:nth-child(2n) {
   background-color: #ffffff;
 }
 
-.advices-title-housing::before,
-.advices-title-eat::before,
-.advices-title-gifts::before {
+.services-title-house::before,
+.services-title-eat::before,
+.services-title-gifts::before {
   position: absolute;
   left: 0;
   right: 0;
@@ -328,7 +350,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding-top: 91px;
+  padding-top: 71px;
+  padding-bottom: 71px;
   width: 1200px;
 }
 
@@ -338,7 +361,7 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin-bottom: 29px;
+  margin-bottom: 21px;
 }
 
 .search-description {
@@ -348,7 +371,7 @@ body {
   background-color: inherit;
   padding-bottom: 26px;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 53px;
   padding: 0;
 }
 
@@ -403,6 +426,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 26px;
+  padding-bottom: 28px;
 }
 
 .button-newsletter {
@@ -433,13 +457,31 @@ body {
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
-  margin-left: 70px;
+  padding-left: 70px;
+
 }
 
 .inner-header {
   width: 1060px;
-  margin: 0 auto;
   margin-bottom: 40px;
+  display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    }
+
+
+.catalog-hotels {
+  background-image: url("../images/catalog-back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  background-color: #476b86;
+  height: 412px;
+  margin-bottom: 50px;
+}
+
+.catalog-hotels-filter {
+  padding-bottom: 83px;
 }
 
 .catalog-filter {
@@ -448,6 +490,12 @@ body {
   margin: 0 auto;
   padding-bottom: 70px;
 }
+
+.catalog-sorting {
+margin-right: auto;
+width: 338px;
+}
+
 
 /* Хлебные крошки */
 .breadcrumbs {
@@ -475,17 +523,6 @@ body {
   background-position: center;
   padding-left: 70px;
 
-}
-
-.catalog-hotels {
-  background-image: url("../images/catalog-back.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #ffffff;
-  background-color: #476b86;
-  height: 412px;
-  margin: 0;
-  margin-bottom: 50px;
 }
 
 .button-blue {
@@ -541,6 +578,11 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  margin-right: auto;
+  padding: 6px 0;
+  padding-left: 70px;
+
 }
 
 .select-control {
@@ -592,7 +634,7 @@ body {
 
 .footer-social-list {
   list-style: none;
-  color: inherit;
+  color: #000000;
 }
 
 .footer-contacts-phone {
@@ -608,13 +650,12 @@ body {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  padding: 25px 0;
+  padding: 40px 0;
   align-items: center;
 }
 
 .footer-social {
-  max-width: 142px;
-  margin-right: auto;
+ margin-right: auto;
 }
 
 .footer-social-list {
@@ -623,11 +664,24 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: 12px;
-}
 
-.footer-social-item {
+  }
+
+ .footer-social-item {
   width: 40px;
   height: 40px;
-  margin-right: 3px;
+  margin-left: 12px;
+  padding-top: 15px;
+}
+
+.footer-social-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.footer-contacts-container {
+width: 720px;
+
+
+
+
 }
