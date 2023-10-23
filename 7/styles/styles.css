@@ -164,15 +164,14 @@ body {
 .welcome {
   background-image: url("../images/divider.svg"), url("../images/index-background.jpg");
   background-color: #4067b4;
-  background-size: 100%;
+  object-fit: cover;
   background-repeat: no-repeat;
   background-position: center bottom -1px, left top;
   text-align: center;
   min-height: 485px;
   padding-top: 50px;
   box-sizing: border-box;
-  object-fit: cover;
-}
+ }
 
 .vector-welcome {
   width: 458px;
@@ -413,7 +412,6 @@ body {
 .newsletter-index {
   background-image: url("../images/background-newsletter.jpg");
   background-size: cover;
-  object-fit: cover;
   background-color: #44718f;
   background-repeat: no-repeat;
   text-align: center;
@@ -525,7 +523,6 @@ box-sizing: border-box;
 
 .catalog-hotels {
   background-image: url("../images/catalog-back.jpg");
-  object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
@@ -784,6 +781,12 @@ padding:50px 70px 60px;
   border-radius: 4px;
   outline: 1px solid #e6e6e6;
   flex-grow: 1;
+}
+
+.hotel-card-image {
+object-fit: contain;
+
+
 }
 
 .frame-hotel-price {
