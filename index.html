@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <div class="page-container">
+    <div class="page-container" data-test="header">
       <!-- Шапка -->
       <header class="page-header">
         <nav class="navigation">
@@ -54,15 +54,15 @@
           </ul>
         </nav>
       </header>
-      <main class="main-container main-index">
-        <section class="welcome">
+      <main class="main-container main-index" data-test="main">
+        <section class="welcome" data-test="hero">
           <!-- Главный заголовок -->
           <h1 class="visually-hidden">Добро пожаловать в великолепную Седону</h1>
           <img class="vector-welcome" alt="Welcome to the gorgeous Sedona 'because the Grand Canyon sukcs'."
             src="images/welcome.svg" width="458" height="352">
         </section>
         <!-- Преимущества -->
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <h2>Седона — небольшой городок в Аризоне,<br>
             заслуживающий большего!</h2>
           <p class="advantages-header">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
@@ -125,7 +125,7 @@
           </ul>
         </section>
         <!-- Переход к поиску -->
-        <section class="search-hotel">
+        <section class="search-hotel" data-test="search">
           <h2 class="interest-title">Заинтересовались?</h2>
           <p class="search-description">Укажите предполагаемые даты поездки,<br>
             и мы покажем вам лучшие предложения
@@ -133,7 +133,7 @@
           <a class="button button-search link" href="#">ПОИСК ГОСТИНИЦЫ В седоне</a>
         </section>
         <!-- Форма для подписки -->
-        <section class="newsletter newsletter-index">
+        <section class="newsletter newsletter-index" data-test="subscribe">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
           <p class="newsletter-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -145,7 +145,7 @@
         </section>
       </main>
       <!-- Подвал -->
-      <footer class="page-footer">
+      <footer class="page-footer" data-test="footer">
                 <section class="footer-social">
             <h2 class="visually-hidden">Наши соцсети</h2>
             <ul class="footer-social-list">
