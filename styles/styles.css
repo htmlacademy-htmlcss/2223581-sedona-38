@@ -125,7 +125,19 @@ body {
   margin-left: auto;
 }
 
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
+}
+
 .count {
+  display: block;
   border-radius: 10px;
   background-color: #7db54f;
   color: #ffffff;
@@ -136,6 +148,7 @@ body {
   font-weight: 400;
   line-height: 10px;
   padding: 4px 5px;
+  position: absolute;
 }
 
 .button {
@@ -152,6 +165,7 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #756157;
+  display: inline-block;
 }
 
 .button-navigation-link {
