@@ -75,7 +75,8 @@
             <!-- Форма-фильтр -->
             <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
               <!-- Форма-фильтр левая часть Инфраструктура и Тип Жилья -->
-              <fieldset class="catalog-filter-infrastructure">
+              <div class="catalog-filter-container-left">
+              <fieldset class="filter-group catalog-filter-infrastructure">
                 <legend class="catalog-filter-title">Инфраструктура</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
@@ -128,7 +129,9 @@
                   </li>
                 </ul>
               </fieldset>
+            </div>
               <!-- Форма-фильтр правая часть Стоимость -->
+              <div class="catalog-filter-container-right">
               <fieldset class="catalog-filter-price">
                 <legend class="catalog-filter-price">Стоимость, ₽:</legend>
                 <div class="range">
@@ -154,6 +157,7 @@
                   </div>
                 </div>
               </fieldset>
+            </div>
             </form>
           </div>
         </section>
