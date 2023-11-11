@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
+  </head>
+
+  <body>
+    <div class="modal-container modal-container-close" data-test="modal">
+      <div class="modal modal-search-hotel">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <form class="search-hotel-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="form-label" for="search-hotel-date-in">Дата Заезда:</label>
+            <span class="field-date-container">
+              <input class="field-modal field-status" type="text" id="search-hotel-date-in" name="search-hotel-date"
+                placeholder="Укажите дату" value="27 апреля 2020" required>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </span>
+            <span class="date-info date-invalid">Мы не можем отправить вас в прошлое.</span>
+            <label class="form-label" for="search-hotel-date-out">Дата Выезда:</label>
+            <span class="field-date-container">
+              <input class="field-modal field-status" type="text" id="search-hotel-date-out"
+                name="search-hotel-date-out" placeholder="Укажите дату" value="1 сентября 2023" required>
+              <button class="calendar" type="button">
+                <span class="visually-hidden">Календарь</span>
+              </button>
+            </span>
+            <span class="date-info date-valid">На эти даты есть свободные номера. Пока есть.</span>
+            <label class="form-label" for="search-hotel-adult">Взрослые:</label>
+            <div class="input-container">
+              <button class="minus minus-plus-status button-select" type="button">
+                <span class="visually-hidden">Минус взрослый</span>
+                <span class="button-minus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </span>
+              </button>
+              <input class="field-modal field-modal-adult" type="text" id="search-hotel-adult" name="search-hotel-adult"
+                placeholder="Укажите кол-во" value="2" required>
+              <button class="plus minus-plus-status button-select" type="button">
+                <span class="visually-hidden">Плюс взрослый</span>
+                <span class="button-plus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <span class="form-label">
+              <label class="form-label-children" for="search-hotel-children">Дети:</label>
+              <span class="tooltip">
+                <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
+                </button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-label">Укажите количество детей, которые будут
+                  с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </span>
+            </span>
+            <div class="input-container">
+              <button class="minus minus-plus-status button-select" type="button">
+                <span class="visually-hidden">Минус ребёнок</span>
+                <span class="button-minus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" viewBox="0 0 14 2" fill="none">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </span>
+              </button>
+              <input class="field-modal field-modal-children" type="text" id="search-hotel-children"
+                name="search-hotel-children" placeholder="Укажите кол-во" value="2" required>
+              <button class="plus minus-plus-status button-select" type="button">
+                <span class="visually-hidden">Плюс ребёнок</span>
+                <span class="button-plus">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <button class="button button-search search-hotel-submit button-blue" type="submit">Найти</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+
+</html>
