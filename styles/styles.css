@@ -499,7 +499,7 @@ body {
   background-image: none;
   text-align: center;
   color: #000000;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -627,7 +627,7 @@ body {
 }
 
 .meets {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -952,7 +952,7 @@ body {
 
 .hotel-card-title {
   margin: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -992,7 +992,7 @@ body {
   width: 60px;
   height: 60px;
   padding: 14px 20px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1087,7 +1087,7 @@ body {
 }
 
 .footer-contacts-phone {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -1264,7 +1264,7 @@ body {
 
 .catalog-filter-title {
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1769,7 +1769,7 @@ opacity: 1;
 .form-label {
   margin-right: 18px;
   display: flex;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans", sans-serif;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
