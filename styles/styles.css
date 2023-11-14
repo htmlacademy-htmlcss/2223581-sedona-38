@@ -152,7 +152,7 @@ body {
   height: 0;
   left: 15px;
   right: 16px;
-  bottom: -2px;
+  bottom: -1px;
   border: 1px solid #756257;
 }
 
@@ -217,8 +217,9 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #756157;
-  display: inline-block;
   cursor: pointer;
+  box-sizing: border-box;
+  height: 36px;
 }
 
 .button-navigation-link {
@@ -238,6 +239,7 @@ body {
   min-height: 484px;
   padding-top: 50px;
   box-sizing: border-box;
+  background-size: 100%;
 }
 
 .vector-welcome {
@@ -762,14 +764,14 @@ body {
 
 .button-favourites {
   background-color: #7db54f;
-  min-width: 140px;
+  width: 140px;
 }
 
 .button-brown-more {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  min-width: 140px;
+  width: 140px;
 }
 
 .button-apply {
@@ -1075,7 +1077,6 @@ body {
   width: 1em;
 }
 
-
 .rating {
   padding: 9px 22px 8px 23px;
   font-size: 16px;
@@ -1097,6 +1098,10 @@ body {
   padding: 40px 70px 30px;
   justify-content: space-between;
   box-sizing: border-box;
+}
+
+.footer-contacts-container {
+  width: 341px;
 }
 
 .footer-contacts-phone {
@@ -1447,7 +1452,8 @@ body {
 }
 
 .range-toggle:hover {
-  box-shadow: 0 4px 10px 0 #00000040;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f2f2f2;
 }
 
 .range-toggle:focus {
@@ -1455,7 +1461,8 @@ body {
 }
 
 .range-toggle:active {
-  border-color: #000000;
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1495,7 +1502,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   box-sizing: border-box;
   transform: translateY(23px);
