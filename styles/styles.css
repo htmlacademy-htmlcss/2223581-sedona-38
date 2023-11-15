@@ -219,8 +219,7 @@ body {
   background-color: #756157;
   cursor: pointer;
   box-sizing: border-box;
-  height: 36px;
-}
+ }
 
 .button-navigation-link {
   display: grid;
@@ -239,7 +238,7 @@ body {
   min-height: 484px;
   padding-top: 50px;
   box-sizing: border-box;
-  background-size: 100%;
+  background-size: 100%, cover;
 }
 
 .vector-welcome {
@@ -939,6 +938,7 @@ body {
   padding: 20px;
   border-radius: 4px;
   outline: 1px solid #e6e6e6;
+  align-items: start;
 }
 
 .hotel-card-image {
@@ -1098,6 +1098,7 @@ body {
   padding: 40px 70px 30px;
   justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .footer-contacts-container {
@@ -1240,12 +1241,12 @@ body {
   border-radius: 50%;
 }
 
-.control:hover .control-mark {
+.control:hover, .control-mark:hover, .control-mark-radio:hover {
   opacity: 0.6;
 }
 
 .control:focus-within .control-mark,
-.control:focus-within .control-mark-radio {
+.control:focus-within .control-mark-radio:focus-within {
   outline: 3px solid #83b3d3;
 }
 
