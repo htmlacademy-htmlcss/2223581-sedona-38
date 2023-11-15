@@ -217,9 +217,9 @@ body {
   border-radius: 4px;
   border: none;
   background-color: #756157;
-  display: inline-block;
   cursor: pointer;
-}
+  box-sizing: border-box;
+ }
 
 .button-navigation-link {
   display: grid;
@@ -238,6 +238,7 @@ body {
   min-height: 484px;
   padding-top: 50px;
   box-sizing: border-box;
+  background-size: 100%, cover;
 }
 
 .vector-welcome {
@@ -762,14 +763,14 @@ body {
 
 .button-favourites {
   background-color: #7db54f;
-  min-width: 140px;
+  width: 140px;
 }
 
 .button-brown-more {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  min-width: 140px;
+  width: 140px;
 }
 
 .button-apply {
@@ -937,6 +938,7 @@ body {
   padding: 20px;
   border-radius: 4px;
   outline: 1px solid #e6e6e6;
+  align-items: start;
 }
 
 .hotel-card-image {
@@ -1075,7 +1077,6 @@ body {
   width: 1em;
 }
 
-
 .rating {
   padding: 9px 22px 8px 23px;
   font-size: 16px;
@@ -1097,6 +1098,11 @@ body {
   padding: 40px 70px 30px;
   justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.footer-contacts-container {
+  width: 341px;
 }
 
 .footer-contacts-phone {
@@ -1235,12 +1241,12 @@ body {
   border-radius: 50%;
 }
 
-.control:hover .control-mark {
+.control:hover, .control-mark:hover, .control-mark-radio:hover {
   opacity: 0.6;
 }
 
 .control:focus-within .control-mark,
-.control:focus-within .control-mark-radio {
+.control:focus-within .control-mark-radio:focus-within {
   outline: 3px solid #83b3d3;
 }
 
@@ -1447,7 +1453,8 @@ body {
 }
 
 .range-toggle:hover {
-  box-shadow: 0 4px 10px 0 #00000040;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  background-color: #f2f2f2;
 }
 
 .range-toggle:focus {
@@ -1455,7 +1462,8 @@ body {
 }
 
 .range-toggle:active {
-  border-color: #000000;
+  outline: 2px solid #83B3D3;
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
 }
 
 .toggle-min {
@@ -1495,7 +1503,7 @@ body {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
-  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   box-sizing: border-box;
   transform: translateY(23px);
